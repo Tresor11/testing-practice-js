@@ -16,6 +16,15 @@ test('Returns cipher with x letters ahead', () => {
   expect(caesarCipher('microverse', 24)).toBe('kgapmtcpqc');
 });
 
+test('text keeps the same case', () => {
+  expect(caesarCipher('TreSor', 7)).toBe('AylZvy');
+});
+
+test('text keeps punctuation', () => {
+  expect(caesarCipher('If it wasn\'t meant to be!', 7)).toBe('Pm pa dhzu\'a tlhua av il!');
+});
+
+
 test('do basic operations', () => {
   expect(calculator.add(2, 3)).toBe(5);
   expect(calculator.substract(3, 2)).toBe(1);
