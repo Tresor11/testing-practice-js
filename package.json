@@ -1,0 +1,27 @@
+{
+  "name": "testing-practice-js",
+  "version": "1.0.0",
+  "description": "on this repository we explore some of the basics functionality of jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tresor11/testing-practice-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tresor11/testing-practice-js/issues"
+  },
+  "homepage": "https://github.com/Tresor11/testing-practice-js#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^25.2.3"
+  }
+}
