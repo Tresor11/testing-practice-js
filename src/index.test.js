@@ -1,4 +1,4 @@
-import { capitalize, reverse, calculator } from './index';
+import { capitalize, reverse, calculator, caesarCipher } from './index';
 
 test('capitalize the first letter', () => {
   expect(capitalize('aron')).toBe('Aron');
@@ -6,6 +6,10 @@ test('capitalize the first letter', () => {
 
 test('capitalize the first letter', () => {
   expect(reverse('tresor')).toBe('rosert');
+});
+
+test('Returns cipher with one letter ahead', () => {
+  expect(caesarCipher('defend', 1)).toBe('efgfoe');
 });
 
 test('do basic operations', () => {
