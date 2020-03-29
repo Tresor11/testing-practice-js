@@ -16,12 +16,16 @@ test('Returns cipher with x letters ahead', () => {
   expect(caesarCipher('microverse', 24)).toBe('kgapmtcpqc');
 });
 
-test('text keeps the same case', () => {
+test('the string keeps the same case', () => {
   expect(caesarCipher('TreSor', 7)).toBe('AylZvy');
 });
 
-test('text keeps punctuation', () => {
+test('the string keeps punctuation', () => {
   expect(caesarCipher('If it wasn\'t meant to be!', 7)).toBe('Pm pa dhzu\'a tlhua av il!');
+});
+
+it('text is returned with key = 0 or empty', () => {
+  expect(caesarCipher('hey', 0)).toBe('hey');
 });
 
 
