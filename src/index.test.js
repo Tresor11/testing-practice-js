@@ -24,7 +24,7 @@ test('the string keeps punctuation', () => {
   expect(caesarCipher('If it wasn\'t meant to be!', 7)).toBe('Pm pa dhzu\'a tlhua av il!');
 });
 
-it('text is returned with key = 0 or empty', () => {
+test('text is returned with key = 0 or empty', () => {
   expect(caesarCipher('hey', 0)).toBe('hey');
 });
 
